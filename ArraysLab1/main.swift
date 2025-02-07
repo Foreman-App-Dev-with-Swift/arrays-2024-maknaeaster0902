@@ -172,11 +172,14 @@ print("***PROBLEM 2.0 : FITNESS TRACKING")
  Using arrays of type String, create at least THREE lists (arrays), one for walking challenges, and one for running challenges, and one for lifting challenges - in that order. Each should have at least THREE challenges or how many times a week it's done and should be initialized using an array. Feel free to create more lists for different activities.
  */
 //Print all three of the arrays to make sure it outputs in the console.
+var walkingChallenges: [String] = ["Walk twice a week!", "Walk four times a week!", "Walk 7 times a week!"]
+var runningChallenges: [String] = ["Run one time a week!", "Run 3 times a week!", "Run 7 times a week!"]
+var weightliftingChallenges: [String] = ["Lift 5 pounds for 15 minutes a week!", "Lift 7 pounds for 30 minutes a day!", "Lift 10 pounds for 45 minutes a day!"]
+print(walkingChallenges)
+print(runningChallenges)
+print(weightliftingChallenges)
 
-
-
-
-print("\n")
+//print("\n")
 
 print("PROBLEM 2.1 : FITNESS TRACKING")
 // In your app you want to show all of these lists on the same screen grouped into sections. Create a challenges array that holds (assigned the value) each of the lists you have created (it will be an array of arrays). Using the new challenges array, print the first element. Remember what number the first element it. Hint: it's alway minus 1.
