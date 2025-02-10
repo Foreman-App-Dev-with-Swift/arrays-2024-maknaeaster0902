@@ -183,8 +183,8 @@ print(weightliftingChallenges)
 
 print("PROBLEM 2.1 : FITNESS TRACKING")
 // In your app you want to show all of these lists on the same screen grouped into sections. Create a challenges array that holds (assigned the value) each of the lists you have created (it will be an array of arrays). Using the new challenges array, print the first element. Remember what number the first element it. Hint: it's alway minus 1.
-
-
+var challenges: [Array] = [walkingChallenges, runningChallenges, weightliftingChallenges]
+print(challenges[0])
 
 print("\n")
 print("***PROBLEM 2.2 : PRINTING FITNESS TRACKING")
@@ -193,10 +193,7 @@ print("***PROBLEM 2.2 : PRINTING FITNESS TRACKING")
 //Create the 2D array to hold the other arrays
 //Confused? You are using a double index [] [] which is calling a list in a list.
 //Print it. The console should say what you coded the second challenge in the second list. If not, figure it out.
-
- 
- 
- 
+print(challenges[1] [1])
  
  print("\n")
 print("***PROBLEM 2.3 : REMOVING CHALLENGES")
