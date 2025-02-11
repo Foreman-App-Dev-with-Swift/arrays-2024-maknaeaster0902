@@ -198,16 +198,17 @@ print(challenges[1] [1])
  print("\n")
 print("***PROBLEM 2.3 : REMOVING CHALLENGES")
 // All of the challenges will reset at the end of the month. Use the removeAll to remove everything from challenges. Print challenges.
+challenges.removeAll()
+print(challenges)
 
- 
- 
  
  print("\n")
  
  
  print("PROBLEM 2.4 : FITNESS COMMITMENTS")
 // Create a new array of type String that will represent challenges a user has committed to instead of available challenges. It can be an empty array or have a few items in it. Print it to see if it outputs in the console.
- 
+var committedChallenges: [String] = ["Walk twice a week!","Run 3 times a week!","Lift 5 pounds for 15 minutes a week!",]
+print(committedChallenges)
 
  
  print("\n")
@@ -216,8 +217,15 @@ print("PROBLEM 2.5 : COMBINING IF STATEMENTS AND ARRAYS")
 // Write an if statement that will use .isEmpty to check if there is anything in the array. If there is not, print a statement asking the user to commit to a challenge. Add an else-if statement that will print "The challenge you have chosen is" and add the FIRST committedChallenges[0] if the array count is exactly equals 1 (.count). Then add an else statement that will print "You have chosen multiple challenges."
 //Hint: To be clear, you are using committedChallenges.isEmpty first and then committedChallenges.count next.
 //Then test your code by changing the number of challenges in the committedChallenges array above.
-
- 
+if committedChallenges.isEmpty {
+    print("You have not committed to any challenges. Please commit to a challenge.")
+}
+else if committedChallenges.count == 1 {
+    print("The challenge you have chosen is" + committedChallenges[0])
+}
+else {
+    print("You have chosen multiple challenges.")
+}
 
 
 
